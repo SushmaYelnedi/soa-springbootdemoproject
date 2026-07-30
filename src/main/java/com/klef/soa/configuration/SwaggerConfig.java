@@ -8,18 +8,18 @@ import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 
 @Configuration
-public class SwaggerConfig {
-	
-	@Bean
-	public OpenAPI customOpenAPI()
-	{
-		return new OpenAPI()
-				.info(new Info()
-						.title("Doctor Service API")
-						.version("1.0")
-						.description("REST API Documentation for Doctor Microservice")
-						.contact(new Contact()
-								.name("KLUniversity")
-								.email("demo@example.com")));
-	}
+public class SwaggerConfig
+{
+    @Bean
+    public OpenAPI customOpenAPI()
+    {
+        return new OpenAPI()
+                .info(new Info()
+                        .title("Doctor Service API")
+                        .version("1.0")
+                        .description("REST API Documentation for Doctor Microservice")
+                        .contact(new Contact()
+                                .name("KLUniversity")
+                                .email("demo@example.com")));
+    }
 }
